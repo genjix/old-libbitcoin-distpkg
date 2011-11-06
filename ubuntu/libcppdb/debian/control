@@ -1,0 +1,27 @@
+Source: libcppdb
+Priority: optional
+Maintainer: Amir Taaki <genjix@riseup.net>
+Build-Depends: debhelper (>= 8.0.0), cmake, libpq-dev
+Standards-Version: 3.9.2
+Section: libs
+Homepage: http://art-blog.no-ip.info/sql/cppdb/
+#Vcs-Git: git://git.debian.org/collab-maint/libcppdb.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/libcppdb.git;a=summary
+
+Package: libcppdb-dev
+Section: libdevel
+Architecture: any
+Depends: libcppdb (= ${binary:Version})
+Description: SQL connectivity library development files
+ CppDB is an SQL connectivity library that is designed to provide 
+ platform and Database independent connectivity API similarly to 
+ what JDBC, ODBC and other connectivity libraries do.
+
+Package: libcppdb
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpq-dev
+Description: SQL connectivity library development files
+ CppDB is an SQL connectivity library that is designed to provide 
+ platform and Database independent connectivity API similarly to 
+ what JDBC, ODBC and other connectivity libraries do.

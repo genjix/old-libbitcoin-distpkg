@@ -1,0 +1,12 @@
+These contain the debian/ directories needed by debuild for creating Ubuntu
+packages.
+
+DEBFULLNAME="Amir Taaki" dh_make -e genjix@riseup.net -p libbitcoin_0~git31f0a62 -c gpl3
+
+(should be AGPL, but dh_make doesn't have agpl3 template)
+
+for extra debugging, put this into the rules file:
+
+export DH_VERBOSE=1
+
+

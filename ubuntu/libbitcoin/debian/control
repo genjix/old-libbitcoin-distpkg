@@ -1,0 +1,25 @@
+Source: libbitcoin
+Priority: optional
+Maintainer: Amir Taaki <genjix@riseup.net>
+Build-Depends: debhelper (>= 8.0.0), libboost-all-dev, libcppdb-dev, libssl-dev, pkg-config
+Standards-Version: 3.9.2
+Section: libs
+Homepage: http://libbitcoin.org/
+Vcs-Git: git://gitorious.org/libbitcoin/libbitcoin.git
+Vcs-Browser: https://gitorious.org/libbitcoin/libbitcoin
+
+Package: libbitcoin-dev
+Section: libdevel
+Architecture: any
+Depends: libbitcoin (= ${binary:Version})
+Description: Bitcoin library - development files
+ Rewrite bitcoin, make it super-pluggable, very easy to do and hack everything
+ at every level, and very configurable.
+
+Package: libbitcoin
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcppdb, libboost-all-dev, libssl-dev
+Description: Bitcoin library
+ Rewrite bitcoin, make it super-pluggable, very easy to do and hack everything
+ at every level, and very configurable.

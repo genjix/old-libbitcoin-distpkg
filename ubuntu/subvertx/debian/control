@@ -1,0 +1,16 @@
+Source: subvertx
+Section: net
+Priority: optional
+Maintainer: Amir Taaki <genjix@riseup.net>
+Build-Depends: debhelper (>= 8.0.0), libbitcoin-dev, libboost-all-dev, libcppdb-dev, libssl-dev, pkg-config
+Standards-Version: 3.9.2
+Homepage: http://libbitcoin.org/
+Vcs-Git: git://gitorious.org/libbitcoin/subvertx.git
+Vcs-Browser: https://gitorious.org/libbitcoin/subvertx
+
+Package: subvertx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libbitcoin, libboost-all-dev, libcppdb, libssl-dev
+Description: Bitcoin command line utilities
+ A collection of useful command line utilities for working with the bitcoin protocol.
+
