@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libcppdb
+Description:  SQL Connectivity Library
+Version: 0.1
+Cflags: -I${includedir} -std=gnu++0x
+Libs: -L${libdir} -lcppdb -lpq
+
