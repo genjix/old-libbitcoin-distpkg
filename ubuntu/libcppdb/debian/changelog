@@ -1,5 +1,5 @@
-libcppdb (0~svn1876-1) oneiric; urgency=low
+libcppdb (0~svn20110716-1) oneiric; urgency=low
 
   * Initial release
 
- -- Amir Taaki <genjix@riseup.net>  Sat, 05 Nov 2011 02:21:52 +0000
+ -- Amir Taaki <genjix@riseup.net>  Sat, 16 Nov 2011 02:21:52 +0000
